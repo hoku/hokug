@@ -1,0 +1,26 @@
+/**
+ * hokug v0.1.0
+ * http://hoku.in/
+ *
+ * Copyright 2013 hoku.
+ * Released under the MIT License.
+ */
+
+canvas #hokugCanvas {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+	-webkit-user-select: none;
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: #444;
+	overflow-y: hidden;
+}
+
+html {
+	overflow-y: hidden;
+}
