@@ -248,7 +248,7 @@ hokug.touchDownBase = function (event) {
 
 	if (hokug.touchDown) {
 		var x, y;
-		if ("ontouchstart" in window.document.documentElement) {
+		if (event.touches && event.touches.length > 0) {
 			x = event.touches[0].pageX;
 			y = event.touches[0].pageY;
 		} else {
@@ -274,7 +274,7 @@ hokug.touchMoveBase = function (event) {
 
 	if (hokug.touchMove) {
 		var x, y;
-		if ("ontouchmove" in window.document.documentElement) {
+		if (event.touches && event.touches.length > 0) {
 			x = event.touches[0].pageX;
 			y = event.touches[0].pageY;
 		} else {
@@ -300,9 +300,9 @@ hokug.touchUpBase = function (event) {
 
 	if (hokug.touchUp) {
 		var x, y;
-		if ("ontouchend" in window.document.documentElement) {
-			x = event.touches[0].pageX;
-			y = event.touches[0].pageY;
+		if (event.changedTouches && event.changedTouches.length > 0) {
+			x = event.changedTouches[0].pageX;
+			y = event.changedTouches[0].pageY;
 		} else {
 			x = event.x;
 			y = event.y;
