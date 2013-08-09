@@ -1,5 +1,5 @@
 /**
- * hokug v0.1.0
+ * hokug v0.1.1
  * http://hoku.in/
  *
  * Copyright 2013 hoku.
